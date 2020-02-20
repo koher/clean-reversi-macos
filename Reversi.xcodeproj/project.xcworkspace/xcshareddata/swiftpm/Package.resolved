@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CleanReversi",
+        "repositoryURL": "https://github.com/koher/clean-reversi-swift.git",
+        "state": {
+          "branch": null,
+          "revision": "5272a5190dbab1cd2b362520cd8dc71f80440e85",
+          "version": "0.1.0-alpha.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
