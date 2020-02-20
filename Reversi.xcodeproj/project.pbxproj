@@ -17,6 +17,7 @@
 		D6C8E64623FE35DD00439CEE /* CleanReversiGateway in Frameworks */ = {isa = PBXBuildFile; productRef = D6C8E64523FE35DD00439CEE /* CleanReversiGateway */; };
 		D6C8E64823FE35DD00439CEE /* CleanReversi in Frameworks */ = {isa = PBXBuildFile; productRef = D6C8E64723FE35DD00439CEE /* CleanReversi */; };
 		D6C8E64A23FE35DD00439CEE /* CleanReversiAsync in Frameworks */ = {isa = PBXBuildFile; productRef = D6C8E64923FE35DD00439CEE /* CleanReversiAsync */; };
+		D6C8E64D23FE364800439CEE /* DiskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C8E64C23FE364800439CEE /* DiskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		D6C8E63123FE357A00439CEE /* ReversiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReversiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C8E63523FE357A00439CEE /* ReversiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversiTests.swift; sourceTree = "<group>"; };
 		D6C8E63723FE357A00439CEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6C8E64C23FE364800439CEE /* DiskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				D6C8E62823FE357900439CEE /* Main.storyboard */,
 				D6C8E62B23FE357900439CEE /* Info.plist */,
 				D6C8E62C23FE357900439CEE /* Reversi.entitlements */,
+				D6C8E64B23FE362600439CEE /* Views */,
 			);
 			path = Reversi;
 			sourceTree = "<group>";
@@ -103,6 +106,14 @@
 				D6C8E63723FE357A00439CEE /* Info.plist */,
 			);
 			path = ReversiTests;
+			sourceTree = "<group>";
+		};
+		D6C8E64B23FE362600439CEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D6C8E64C23FE364800439CEE /* DiskView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6C8E62523FE357800439CEE /* ViewController.swift in Sources */,
+				D6C8E64D23FE364800439CEE /* DiskView.swift in Sources */,
 				D6C8E62323FE357800439CEE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
