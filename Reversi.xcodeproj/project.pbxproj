@@ -18,6 +18,7 @@
 		D6C8E64823FE35DD00439CEE /* CleanReversi in Frameworks */ = {isa = PBXBuildFile; productRef = D6C8E64723FE35DD00439CEE /* CleanReversi */; };
 		D6C8E64A23FE35DD00439CEE /* CleanReversiAsync in Frameworks */ = {isa = PBXBuildFile; productRef = D6C8E64923FE35DD00439CEE /* CleanReversiAsync */; };
 		D6C8E64D23FE364800439CEE /* DiskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C8E64C23FE364800439CEE /* DiskView.swift */; };
+		D6C8E64F23FE5CC400439CEE /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C8E64E23FE5CC400439CEE /* CellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		D6C8E63523FE357A00439CEE /* ReversiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversiTests.swift; sourceTree = "<group>"; };
 		D6C8E63723FE357A00439CEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6C8E64C23FE364800439CEE /* DiskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskView.swift; sourceTree = "<group>"; };
+		D6C8E64E23FE5CC400439CEE /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		D6C8E64B23FE362600439CEE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D6C8E64E23FE5CC400439CEE /* CellView.swift */,
 				D6C8E64C23FE364800439CEE /* DiskView.swift */,
 			);
 			path = Views;
@@ -226,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C8E64F23FE5CC400439CEE /* CellView.swift in Sources */,
 				D6C8E62523FE357800439CEE /* ViewController.swift in Sources */,
 				D6C8E64D23FE364800439CEE /* DiskView.swift in Sources */,
 				D6C8E62323FE357800439CEE /* AppDelegate.swift in Sources */,
