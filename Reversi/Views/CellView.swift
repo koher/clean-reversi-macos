@@ -147,34 +147,6 @@ public class CellView: NSView {
     public var action: Selector? {
         didSet { button.action = action }
     }
-    
-    func animate1() {
-        NSAnimationContext.beginGrouping()
-        let context = NSAnimationContext.current
-        context.duration = 1.0
-        context.timingFunction = CAMediaTimingFunction(name: .easeIn)
-        diskView.animator().frame = CGRect(x: 50, y: 10, width: 0, height: 80)
-        context.completionHandler = {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
-                self?.animate2()
-            }
-        }
-        NSAnimationContext.endGrouping()
-    }
-    
-    func animate2() {
-        NSAnimationContext.beginGrouping()
-        let context = NSAnimationContext.current
-        context.duration = 1.0
-        context.timingFunction = CAMediaTimingFunction(name: .easeOut)
-        diskView.animator().frame = CGRect(x: 10, y: 10, width: 80, height: 80)
-        context.completionHandler = {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
-                self?.animate1()
-            }
-        }
-        NSAnimationContext.endGrouping()
-    }
 }
 
 private struct AnimationCounter {
