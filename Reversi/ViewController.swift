@@ -2,19 +2,14 @@ import Cocoa
 
 class ViewController: NSViewController {
     
-    var cellView: CellView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        cellView = CellView()
-        cellView.setDisk(.dark, animated: false)
-        cellView.target = self
-        cellView.action = #selector(pressCellView)
-        cellView.frame = CGRect(x: 0, y: 100, width: 100, height: 100)
-        view.addSubview(cellView)
+        let boardView = BoardView(frame: CGRect(x: 0, y: 0, width: 480, height: 480))
+        boardView.delegate = self
+        view.addSubview(boardView)
     }
 
     override var representedObject: Any? {
@@ -25,12 +20,8 @@ class ViewController: NSViewController {
 
 }
 
-extension ViewController {
-    @objc func pressCellView() {
-        if let disk = cellView.disk {
-            cellView.disk = Double.random(in: 0...1) < 0.4 ? nil : disk.flipped
-        } else {
-            cellView.disk = Bool.random() ? .dark : .light
-        }
+extension ViewController: BoardViewDelegate {
+    func boardView(_ boardView: BoardView, didSelectCellAtX x: Int, y: Int) {
+        print("(\(x), \(y))")
     }
 }

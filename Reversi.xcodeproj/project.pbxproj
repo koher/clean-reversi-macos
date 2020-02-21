@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D62D90F123FF9D4E009656C3 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62D90F023FF9D4E009656C3 /* BoardView.swift */; };
 		D6C8E62323FE357800439CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C8E62223FE357800439CEE /* AppDelegate.swift */; };
 		D6C8E62523FE357800439CEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C8E62423FE357800439CEE /* ViewController.swift */; };
 		D6C8E62723FE357900439CEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C8E62623FE357900439CEE /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D62D90F023FF9D4E009656C3 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		D6C8E61F23FE357800439CEE /* Reversi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reversi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C8E62223FE357800439CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6C8E62423FE357800439CEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		D6C8E64B23FE362600439CEE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D62D90F023FF9D4E009656C3 /* BoardView.swift */,
 				D6C8E64E23FE5CC400439CEE /* CellView.swift */,
 				D6C8E64C23FE364800439CEE /* DiskView.swift */,
 			);
@@ -231,6 +234,7 @@
 			files = (
 				D6C8E64F23FE5CC400439CEE /* CellView.swift in Sources */,
 				D6C8E62523FE357800439CEE /* ViewController.swift in Sources */,
+				D62D90F123FF9D4E009656C3 /* BoardView.swift in Sources */,
 				D6C8E64D23FE364800439CEE /* DiskView.swift in Sources */,
 				D6C8E62323FE357800439CEE /* AppDelegate.swift in Sources */,
 			);

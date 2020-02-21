@@ -140,7 +140,7 @@ public class CellView: NSView {
         }
     }
     
-    public var target: AnyObject? {
+    public weak var target: AnyObject? {
         didSet { button.target = target }
     }
     
