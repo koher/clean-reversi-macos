@@ -56,18 +56,6 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="File" id="dMs-cI-mzQ">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="File" id="bib-Uj-vzu">
-                                    <items>
-                                        <menuItem title="New" keyEquivalent="n" id="Was-JA-tGl">
-                                            <connections>
-                                                <action selector="newDocument:" target="Ady-hI-5gd" id="4Si-XN-c54"/>
-                                            </connections>
-                                        </menuItem>
-                                    </items>
-                                </menu>
-                            </menuItem>
                             <menuItem title="Help" id="wpr-3q-Mcd">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ"/>
@@ -114,7 +102,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="Kiy-Po-RZd" userLabel="Message View">
-                                <rect key="frame" x="383" y="331" width="96" height="28"/>
+                                <rect key="frame" x="387" y="327" width="96" height="28"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="beZ-ib-Zbf" userLabel="Message Disk View" customClass="DiskView" customModule="Reversi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="2" width="24" height="24"/>
@@ -154,7 +142,7 @@
                                 </connections>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="0JS-oc-K5c" userLabel="Dark View">
-                                <rect key="frame" x="383" y="291" width="270" height="24"/>
+                                <rect key="frame" x="387" y="287" width="270" height="24"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="u6K-j7-35w" customClass="DiskView" customModule="Reversi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -175,6 +163,9 @@
                                                 <segment label="Computer" tag="1"/>
                                             </segments>
                                         </segmentedCell>
+                                        <connections>
+                                            <action selector="changePlayerControlSegment:" target="XfG-lQ-9wD" id="WLX-YO-vbL"/>
+                                        </connections>
                                     </segmentedControl>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NiW-iO-w53">
                                         <rect key="frame" x="210" y="2" width="15" height="21"/>
@@ -202,7 +193,7 @@
                                 </constraints>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="kVX-JG-Xi9" userLabel="Light View">
-                                <rect key="frame" x="383" y="251" width="270" height="24"/>
+                                <rect key="frame" x="387" y="247" width="270" height="24"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="tpj-ti-0LK" customClass="DiskView" customModule="Reversi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -223,6 +214,9 @@
                                                 <segment label="Computer" tag="1"/>
                                             </segments>
                                         </segmentedCell>
+                                        <connections>
+                                            <action selector="changePlayerControlSegment:" target="XfG-lQ-9wD" id="6iW-SA-r8c"/>
+                                        </connections>
                                     </segmentedControl>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hl4-c7-Jps">
                                         <rect key="frame" x="210" y="2" width="15" height="21"/>
@@ -248,16 +242,28 @@
                                     <constraint firstItem="nwm-vx-ECa" firstAttribute="centerY" secondItem="kVX-JG-Xi9" secondAttribute="centerY" id="ys8-b4-cxM"/>
                                 </constraints>
                             </customView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XYl-iG-k6E">
+                                <rect key="frame" x="381" y="13" width="75" height="32"/>
+                                <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nMQ-I6-CTd">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pressResetButton:" target="XfG-lQ-9wD" id="M3Z-g4-zHa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="kVX-JG-Xi9" firstAttribute="leading" secondItem="0JS-oc-K5c" secondAttribute="leading" id="2ay-6c-kfI"/>
                             <constraint firstItem="ETE-s8-XvN" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="8" id="40Y-XX-UvZ"/>
                             <constraint firstItem="0JS-oc-K5c" firstAttribute="top" secondItem="Kiy-Po-RZd" secondAttribute="bottom" constant="16" id="4p1-K2-1KB"/>
-                            <constraint firstItem="Kiy-Po-RZd" firstAttribute="leading" secondItem="ETE-s8-XvN" secondAttribute="trailing" constant="16" id="Cgv-Yo-zEJ"/>
+                            <constraint firstAttribute="bottom" secondItem="XYl-iG-k6E" secondAttribute="bottom" constant="20" id="BLC-e1-fiz"/>
+                            <constraint firstItem="Kiy-Po-RZd" firstAttribute="leading" secondItem="ETE-s8-XvN" secondAttribute="trailing" constant="20" id="Cgv-Yo-zEJ"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0JS-oc-K5c" secondAttribute="trailing" constant="16" id="FAh-bN-xVB"/>
+                            <constraint firstItem="XYl-iG-k6E" firstAttribute="leading" secondItem="Kiy-Po-RZd" secondAttribute="leading" id="PXK-in-KTQ"/>
                             <constraint firstItem="ETE-s8-XvN" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="8" id="T88-8v-D4O"/>
                             <constraint firstItem="Kiy-Po-RZd" firstAttribute="leading" secondItem="0JS-oc-K5c" secondAttribute="leading" id="ZEL-PY-uVM"/>
-                            <constraint firstItem="Kiy-Po-RZd" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="16" id="Zzf-MR-RSm"/>
+                            <constraint firstItem="Kiy-Po-RZd" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="Zzf-MR-RSm"/>
                             <constraint firstAttribute="bottom" secondItem="ETE-s8-XvN" secondAttribute="bottom" constant="8" id="fpa-FP-XW5"/>
                             <constraint firstItem="kVX-JG-Xi9" firstAttribute="width" secondItem="0JS-oc-K5c" secondAttribute="width" id="ngW-gw-NwM"/>
                             <constraint firstItem="kVX-JG-Xi9" firstAttribute="top" secondItem="0JS-oc-K5c" secondAttribute="bottom" constant="16" id="ra2-ss-Yfr"/>
