@@ -8,6 +8,7 @@ public class CellView: NSView {
     private var diskView: DiskView = .init()
     
     private var animationCounter: AnimationCounter = .init()
+    private var lastBounds: CGRect = .zero
     
     private var _disk: Disk?
     public var disk: Disk? {
@@ -59,7 +60,13 @@ public class CellView: NSView {
         super.layout()
         
         button.frame = bounds
-        if !animationCounter.isAnimating() {
+        
+        // A workaround to avoid calling `layoutDiskView` during animations.
+        // Changing `bounds` during animations make the animations collapse
+        // with the current implementation.
+        let isBoundsChanged = bounds != lastBounds
+        lastBounds = bounds
+        if isBoundsChanged || !animationCounter.isAnimating() {
             layoutDiskView(diskView)
         }
     }
@@ -136,7 +143,7 @@ public class CellView: NSView {
                 diskView.disk = diskAfter
             }
             completion?(true)
-            needsLayout = true
+            layoutDiskView(diskView)
         }
     }
     
