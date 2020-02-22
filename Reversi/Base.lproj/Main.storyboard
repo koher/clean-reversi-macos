@@ -255,13 +255,15 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="kVX-JG-Xi9" firstAttribute="leading" secondItem="0JS-oc-K5c" secondAttribute="leading" id="2ay-6c-kfI"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XYl-iG-k6E" secondAttribute="trailing" constant="20" id="3YW-8v-YDH"/>
                             <constraint firstItem="ETE-s8-XvN" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="8" id="40Y-XX-UvZ"/>
                             <constraint firstItem="0JS-oc-K5c" firstAttribute="top" secondItem="Kiy-Po-RZd" secondAttribute="bottom" constant="16" id="4p1-K2-1KB"/>
                             <constraint firstAttribute="bottom" secondItem="XYl-iG-k6E" secondAttribute="bottom" constant="20" id="BLC-e1-fiz"/>
                             <constraint firstItem="Kiy-Po-RZd" firstAttribute="leading" secondItem="ETE-s8-XvN" secondAttribute="trailing" constant="20" id="Cgv-Yo-zEJ"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0JS-oc-K5c" secondAttribute="trailing" constant="16" id="FAh-bN-xVB"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0JS-oc-K5c" secondAttribute="trailing" constant="20" id="FAh-bN-xVB"/>
                             <constraint firstItem="XYl-iG-k6E" firstAttribute="leading" secondItem="Kiy-Po-RZd" secondAttribute="leading" id="PXK-in-KTQ"/>
                             <constraint firstItem="ETE-s8-XvN" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="8" id="T88-8v-D4O"/>
+                            <constraint firstItem="XYl-iG-k6E" firstAttribute="top" relation="greaterThanOrEqual" secondItem="kVX-JG-Xi9" secondAttribute="bottom" constant="16" id="Y1Y-W8-dFF"/>
                             <constraint firstItem="Kiy-Po-RZd" firstAttribute="leading" secondItem="0JS-oc-K5c" secondAttribute="leading" id="ZEL-PY-uVM"/>
                             <constraint firstItem="Kiy-Po-RZd" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="Zzf-MR-RSm"/>
                             <constraint firstAttribute="bottom" secondItem="ETE-s8-XvN" secondAttribute="bottom" constant="8" id="fpa-FP-XW5"/>
